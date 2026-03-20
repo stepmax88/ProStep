@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://github.com" width="300" alt="ProStep Logo">
-</p>
+![ProStep Logo](logo.png)
 
 # 🛠️ ProStep DevOps & Monitoring Solutions
 
