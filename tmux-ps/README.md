@@ -35,9 +35,16 @@
 
 ## 📦 Быстрая установка (RPM)
 
-Установите пакет напрямую из репозитория одной командой:
+Для установки последней версии **tmux-ps** выполните команду (требуются права root):
 
 ```bash
-sudo yum install https://github.com -y
+sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-ps/tmux-ps-1.0.1-1.x86_64.rpm -y
+```
 
+## 📄 Лицензия и Поддержка
+
+Программное обеспечение является интеллектуальной собственностью **ProStep Development**.  
+Условия использования и порядок поддержки для **владельцев активных лицензий** изложены в файле [LICENSE](./LICENSE).
+
+📩 **Обратная связь:** [support@prostep.com.ua](mailto:support@prostep.com.ua)
 
