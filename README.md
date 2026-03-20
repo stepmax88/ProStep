@@ -1,4 +1,6 @@
-![ProStep Logo](logo.png)
+<p align="center">
+  <img src="logo.png" width="250">
+</p>
 
 # 🛠️ ProStep DevOps & Monitoring Solutions
 
