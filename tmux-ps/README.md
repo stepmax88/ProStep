@@ -53,7 +53,6 @@ sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-p
 sudo tee /etc/yum.repos.d/prostep.repo <<EOF
 [prostep]
 name=ProStep Repository
-baseurl=https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-ps/repo/
 baseurl=https://github.com/stepmax88/ProStep/raw/main/tmux-ps/repo/
 enabled=1
 gpgcheck=0
@@ -75,7 +74,7 @@ sudo dnf install tmux-ps -y
 sudo dnf check-update tmux-ps
 ```
 
-Установить новую версию (Upgrade):
+### Установить новую версию (Upgrade):
 ```bash
 sudo dnf upgrade tmux-ps -y
 ```
