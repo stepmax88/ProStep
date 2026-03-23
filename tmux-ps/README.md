@@ -45,6 +45,41 @@
 sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-ps/tmux-ps-1.0.1-1.x86_64.rpm -y
 ```
 
+## 📦 Установка (Рекомендуемый способ)
+
+Для автоматической установки и получения обновлений добавьте репозиторий **ProStep** в вашу систему:
+
+```bash
+sudo tee /etc/yum.repos.d/prostep.repo <<EOF
+[prostep]
+name=ProStep Repository
+baseurl=https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-ps/repo/
+baseurl=https://github.com/stepmax88/ProStep/raw/main/tmux-ps/repo/
+enabled=1
+gpgcheck=0
+metadata_expire=1m
+EOF
+```
+
+Затем установите пакет:
+```
+sudo dnf install tmux-ps -y
+```
+
+## 🔄 Обновление и проверка версий
+
+Поскольку вы используете официальный репозиторий **ProStep**, проверка обновлений и переход на новую версию происходят стандартными средствами системы:
+
+### Проверить текущую версию и наличие обновлений:
+```bash
+sudo dnf check-update tmux-ps
+```
+
+Установить новую версию (Upgrade):
+```bash
+sudo dnf upgrade tmux-ps -y
+```
+
 ## 📄 Лицензия и Поддержка
 
 Программное обеспечение является интеллектуальной собственностью **ProStep Development**.  
