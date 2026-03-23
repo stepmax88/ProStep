@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="logo.png" width="250">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="logo_white.png">
+    <img alt="ProStep Logo" src="logo_black.png" width="250">
+  </picture>
 </p>
 
 # 🛠️ ProStep DevOps & Monitoring Solutions
