@@ -1,1 +1,7 @@
+DEV/
 .idea/
+.DS_Store
+*.build/
+*.dist/
+*.onefile-build/
+
