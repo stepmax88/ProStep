@@ -27,23 +27,24 @@
 
 ## 🔧 Commands
 
-| Command                  | Description                                      |
-|:-------------------------|:-------------------------------------------------|
-| `tmux-ps save`           | Сохранить текущее состояние всех сессий          |
-| `tmux-ps restore`        | Восстановить сессии из последнего дампа          |
-| `tmux-ps [NAME] `        | Подключить указанную сессию                      |
-| `tmux-ps ls`             | Показать список сессий с деталями                |
-| `tmux-ps kill [NAME]`    | Мгновенно закрыть указанную сессию tmux          |
-| `tmux-ps rename [A] [B]` | Переименовать сессию                             |
-| `tmux-ps hwid`           | Получить идентификатор оборудования для лицензии |
-| `tmux-ps lic [KEY]`      | Активировать приложение с помощью ключа          |
+| Command                  | Description                                         |
+|:-------------------------|:----------------------------------------------------|
+| `tmux-ps save`           | Сохранить текущее состояние всех сессий             |
+| `tmux-ps restore`        | Восстановить сессии из последнего дампа             |
+| `tmux-ps [NAME] `        | Подключить указанную сессию                         |
+| `tmux-ps ls`             | Показать список сессий с деталями                   |
+| `tmux-ps kill [NAME]`    | Мгновенно закрыть указанную сессию tmux             |
+| `tmux-ps rename [A] [B]` | Переименовать сессию                                |
+| `tmux-ps hwid`           | Получить идентификатор оборудования для лицензии    |
+| `tmux-ps lic [KEY]`      | Активировать приложение с помощью ключа             |
+| `tmux-ps lic --about`    | Проверить статус лицензии и авторские права         |
 
 ## 📦 Быстрая установка (RPM)
 
 Для установки последней версии **tmux-ps** выполните команду (требуются права root):
 
 ```bash
-sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-ps/tmux-ps-1.0.1-1.x86_64.rpm -y
+sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-ps/tmux-ps-1.0.4-1.x86_64.rpm -y
 ```
 
 ## 📦 Установка (Рекомендуемый способ)
@@ -54,9 +55,11 @@ sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-p
 sudo tee /etc/yum.repos.d/prostep.repo <<EOF
 [prostep]
 name=ProStep Repository
-baseurl=https://github.com/stepmax88/ProStep/raw/main/tmux-ps/repo/
+baseurl=https://raw.githubusercontent.com/stepmax88/ProStep/main/tmux-ps/repo/
+        https://github.com/stepmax88/ProStep/raw/main/tmux-ps/repo/    
 enabled=1
-gpgcheck=0
+gpgcheck=1
+gpgkey=https://raw.githubusercontent.com/stepmax88/ProStep/main/tmux-ps/repo/RPM-GPG-KEY-ProStep
 metadata_expire=1m
 EOF
 ```

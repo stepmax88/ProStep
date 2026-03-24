@@ -1,0 +1,46 @@
+THIRD-PARTY SOFTWARE NOTICES AND LICENSES
+
+This application includes or utilizes the following open-source software components.
+The respective licenses for these components are provided below.
+
+-------------------------------------------------------------------------
+1. tmux (Software)
+License: ISC
+Copyright (c) 2007-2024 Nicholas Marriott <nicholas.marriott@gmail.com>
+
+Permission to use, copy, modify, and distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+-------------------------------------------------------------------------
+
+2. libtmux (Python library)
+License: MIT
+Copyright (c) 2013-2024 Tony Narlock
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+-------------------------------------------------------------------------
+
+3. psutil (Python library)
+License: BSD 3-Clause
+Copyright (c) 2009-2024, Giampaolo Rodola'
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright notice.
+2. Redistributions in binary form must reproduce the above copyright notice.
+-------------------------------------------------------------------------
+
+4. PyYAML (Python library)
+License: MIT
+Copyright (c) 2017-2021 Ingy döt Net
+Copyright (c) 2006-2016 Kirill Simonov
+-------------------------------------------------------------------------
+
+5. Python (Standard Library & Interpreter)
+License: Python Software Foundation License (PSF)
+Copyright (c) 2001-2026 Python Software Foundation. All rights reserved.
+-------------------------------------------------------------------------
