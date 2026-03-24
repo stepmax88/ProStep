@@ -4,3 +4,4 @@ DEV/
 *.onefile-build/
 *.bin
 *.py
+*.sh

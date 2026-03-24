@@ -4,4 +4,4 @@ DEV/
 *.build/
 *.dist/
 *.onefile-build/
-
+*.sh
