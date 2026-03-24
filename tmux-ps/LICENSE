@@ -1,3 +1,7 @@
+=========================================================================
+КОНЕЧНОЕ ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ (EULA) — ProStep Development
+=========================================================================
+
 Copyright (c) 2026 ProStep Development (https://www.prostep.com.ua)
 All rights reserved.
 
@@ -15,3 +19,31 @@ All rights reserved.
 
 ОТКАЗ ОТ ОТВЕТСТВЕННОСТИ:
 Программное обеспечение предоставляется "как есть" (AS IS). Разработчик не несет ответственности за любой прямой или косвенный ущерб, возникший в результате использования или невозможности использования данного ПО.
+
+=========================================================================
+УВЕДОМЛЕНИЯ О СТОРОННЕМ ПРОГРАММНОМ ОБЕСПЕЧЕНИИ (THIRD-PARTY NOTICES)
+=========================================================================
+
+Данное ПО использует компоненты с открытым исходным кодом. Ниже приведены
+тексты лицензий и уведомления об авторских правах для данных компонентов:
+
+1. tmux (Software)
+License: ISC | Copyright (c) 2007-2024 Nicholas Marriott
+Разрешается использование и распространение данного ПО в любых целях, при условии
+сохранения данного уведомления об авторских правах.
+
+2. libtmux (Python library)
+License: MIT | Copyright (c) 2013-2024 Tony Narlock
+The Software is provided "as is", without warranty of any kind.
+
+3. psutil (Python library)
+License: BSD 3-Clause | Copyright (c) 2009-2024 Giampaolo Rodola'
+Redistribution and use in source and binary forms are permitted provided that
+original copyright notices are retained.
+
+4. PyYAML (Python library)
+License: MIT | Copyright (c) 2017-2021 Ingy döt Net, 2006-2016 Kirill Simonov
+
+5. Python (Standard Library & Interpreter)
+License: PSF | Copyright (c) 2001-2026 Python Software Foundation.
+-------------------------------------------------------------------------
