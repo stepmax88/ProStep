@@ -1,0 +1,6 @@
+DEV/
+*.build/
+*.dist/
+*.onefile-build/
+*.bin
+*.py
