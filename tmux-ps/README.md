@@ -15,7 +15,7 @@
 
 ## 📋 Requires
 
-* **OS:** RHEL/CentOS 7+, Fedora, Debian/Ubuntu
+* **OS:** RHEL/CentOS 8+, Fedora, Oracle
 * **Software:** `tmux` >= 1.8
 * **Rights:** Root privileges (для установки и настройки systemd)
 
@@ -44,7 +44,7 @@
 Для установки последней версии **tmux-ps** выполните команду (требуются права root):
 
 ```bash
-sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-ps/tmux-ps-1.0.5-1.el8.x86_64.rpm -y
+sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-ps/tmux-ps-1.0.1-1.el8.x86_64.rpm -y
 ```
 
 ## 📦 Установка (Рекомендуемый способ)
@@ -55,11 +55,10 @@ sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-p
 sudo tee /etc/yum.repos.d/prostep.repo <<EOF
 [prostep]
 name=ProStep Repository
-baseurl=https://raw.githubusercontent.com/stepmax88/ProStep/main/tmux-ps/repo/
-        https://github.com/stepmax88/ProStep/raw/main/tmux-ps/repo/    
+baseurl=https://repo.prostep.com.ua/tmux-ps/repo/
 enabled=1
 gpgcheck=1
-gpgkey=https://raw.githubusercontent.com/stepmax88/ProStep/main/tmux-ps/repo/RPM-GPG-KEY-ProStep
+gpgkey=https://repo.prostep.com.ua/tmux-ps/repo/RPM-GPG-KEY-ProStep
 metadata_expire=1m
 EOF
 ```
