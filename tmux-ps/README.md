@@ -89,12 +89,12 @@ EOF
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><b>Способ 4: Установка через RPM-пакет (Pro)</b></summary>
 
-<pre><code>
+```bash
 sudo dnf install https://repo.prostep.com.ua/repo/packages/prostep-release-1.0-1.noarch.rpm -y
-</code></pre>
+```
 
 </details>
 
