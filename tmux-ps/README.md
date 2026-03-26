@@ -52,15 +52,14 @@ sudo dnf install https://repo.prostep.com.ua/repo/packages/tmux-ps-1.0.1-1.el8.x
 Выберите удобный для вас способ настройки:
 
 
-<details>
+<details markdown="1">
 <summary><b>Способ 1: Автоматический скрипт</b></summary>
 
-<pre><code>
+```bash
 curl -sSL https://repo.prostep.com.ua | sudo bash
-</code></pre>
+```
 
 </details>
-
 
 <details markdown="1">
 <summary><b>Способ 2: Через dnf config-manager</b></summary>
@@ -72,11 +71,10 @@ sudo dnf config-manager --add-repo https://repo.prostep.com.ua/repo/prostep.repo
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><b>Способ 3: Ручная вставка (Copy-Paste)</b></summary>
 
-
-<pre><code>
+```bash
 sudo tee /etc/yum.repos.d/prostep.repo <<EOF
 [prostep]
 name=ProStep Repository
@@ -86,28 +84,26 @@ gpgcheck=1
 gpgkey=https://repo.prostep.com.ua/repo/RPM-GPG-KEY-ProStep
 metadata_expire=1m
 EOF
-</code></pre>
-
+```
 
 </details>
 
+
 <details>
 <summary><b>Способ 4: Установка через RPM-пакет (Pro)</b></summary>
-
 
 <pre><code>
 sudo dnf install https://repo.prostep.com.ua/repo/packages/prostep-release-1.0-1.noarch.rpm -y
 </code></pre>
 
-
 </details>
-
 
 
 ## Установка
 
 Установите пакет:
-```
+
+```bash
 sudo dnf install tmux-ps -y
 ```
 
@@ -116,6 +112,7 @@ sudo dnf install tmux-ps -y
 Поскольку вы используете официальный репозиторий **ProStep**, проверка обновлений и переход на новую версию происходят стандартными средствами системы:
 
 ### Проверить текущую версию и наличие обновлений:
+
 ```bash
 sudo dnf check-update tmux-ps
 ```
