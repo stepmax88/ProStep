@@ -55,8 +55,6 @@ sudo dnf install https://repo.prostep.com.ua/repo/packages/tmux-ps-1.0.1-1.el8.x
 <details>
 <summary><b>Способ 1: Автоматический скрипт</b></summary>
 
-<p>Скопируйте код:</p>
-
 <pre><code>
 curl -sSL https://repo.prostep.com.ua | sudo bash
 </code></pre>
@@ -67,9 +65,9 @@ curl -sSL https://repo.prostep.com.ua | sudo bash
 <details>
 <summary><b>Способ 2: Через dnf config-manager</b></summary>
 
-```bash
+<pre><code>
 sudo dnf config-manager --add-repo https://repo.prostep.com.ua/repo/prostep.repo
-```
+</code></pre>
 
 </details>
 
@@ -78,7 +76,7 @@ sudo dnf config-manager --add-repo https://repo.prostep.com.ua/repo/prostep.repo
 <summary><b>Способ 3: Ручная вставка (Copy-Paste)</b></summary>
 
 
-```bash
+<pre><code>
 sudo tee /etc/yum.repos.d/prostep.repo <<EOF
 [prostep]
 name=ProStep Repository
@@ -88,7 +86,7 @@ gpgcheck=1
 gpgkey=https://repo.prostep.com.ua/repo/RPM-GPG-KEY-ProStep
 metadata_expire=1m
 EOF
-```
+</code></pre>
 
 
 </details>
@@ -97,9 +95,9 @@ EOF
 <summary><b>Способ 4: Установка через RPM-пакет (Pro)</b></summary>
 
 
-```bash
+<pre><code>
 sudo dnf install https://repo.prostep.com.ua/repo/packages/prostep-release-1.0-1.noarch.rpm -y
-```
+</code></pre>
 
 
 </details>
