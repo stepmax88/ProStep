@@ -1,0 +1,7 @@
+[prostep]
+name=ProStep Repository
+baseurl=https://repo.prostep.com.ua/repo/
+enabled=1
+gpgcheck=1
+gpgkey=https://repo.prostep.com.ua/repo/RPM-GPG-KEY-ProStep
+metadata_expire=1m

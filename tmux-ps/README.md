@@ -39,31 +39,62 @@
 | `tmux-ps lic [KEY]`      | Активировать приложение с помощью ключа             |
 | `tmux-ps lic --about`    | Проверить статус лицензии и авторские права         |
 
-## 📦 Быстрая установка (RPM)
+## Быстрая установка (RPM)
 
-Для установки последней версии **tmux-ps** выполните команду (требуются права root):
+Прямая установка **tmux-ps** (v1.0.1) - выполните команду (требуются права root):
 
 ```bash
-sudo dnf install https://repo.prostep.com.ua/tmux-ps/repo/tmux-ps-1.0.1-1.el8.x86_64.rpm -y
+sudo dnf install https://repo.prostep.com.ua/repo/packages/tmux-ps-1.0.1-1.el8.x86_64.rpm -y
 ```
 
-## 📦 Установка (Рекомендуемый способ)
+## Установка репозитория (Рекомендуется)
 
-Для автоматической установки и получения обновлений добавьте репозиторий **ProStep** в вашу систему:
+Выберите удобный для вас способ настройки:
+
+<details>
+<summary><b>Способ 1: Автоматический скрипт (Быстро)</b></summary>
+
+```bash
+curl -sSL https://repo.prostep.com.ua/repo/setup.sh | sudo bash
+```
+
+</details>
+
+<details>
+<summary><b>Способ 2: Через dnf config-manager</b></summary>
+
+```bash
+sudo dnf config-manager --add-repo https://repo.prostep.com.ua/repo/prostep.repo
+```
+</details>
+
+<details>
+<summary><b>Способ 3: Ручная вставка (Copy-Paste)</b></summary>
 
 ```bash
 sudo tee /etc/yum.repos.d/prostep.repo <<EOF
 [prostep]
 name=ProStep Repository
-baseurl=https://repo.prostep.com.ua/tmux-ps/repo/
+baseurl=https://repo.prostep.com.ua/repo/
 enabled=1
 gpgcheck=1
-gpgkey=https://repo.prostep.com.ua/tmux-ps/repo/RPM-GPG-KEY-ProStep
+gpgkey=https://repo.prostep.com.ua/repo/RPM-GPG-KEY-ProStep
 metadata_expire=1m
 EOF
 ```
+</details>
 
-Затем установите пакет:
+<details>
+<summary><b>Способ 4: Установка через RPM-пакет (Pro)</b></summary>
+
+```bash
+sudo dnf install https://repo.prostep.com.ua/repo/packages/prostep-release.rpm -y
+```
+</details>
+
+## Установка
+
+Установите пакет:
 ```
 sudo dnf install tmux-ps -y
 ```
