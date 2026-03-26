@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProStep DevOps & Monitoring</title>
+    <style>
+        /* Светлая тема (по умолчанию) */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #24292f;
+            --border-color: #d0d7de;
+            --table-header: #f6f8fa;
+            --link-color: #0969da;
+        }
+
+        /* Темная тема (автоматически) */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0d1117;
+                --text-color: #c9d1d9;
+                --border-color: #30363d;
+                --table-header: #161b22;
+                --link-color: #58a6ff;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: 0.3s;
+        }
+
+        .logo-container { text-align: center; margin-bottom: 30px; }
+
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid var(--border-color); padding: 12px; text-align: left; }
+        th { background-color: var(--table-header); }
+
+        a { color: var(--link-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        hr { border: 0; border-top: 1px solid var(--border-color); margin: 40px 0; }
+
+        h1, h2, h3 { border-bottom: 1px solid var(--border-color); padding-bottom: 0.3em; }
+    </style>
+</head>
+<body>
+
+<div class="logo-container">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="logo_white.png">
+        <img alt="ProStep Logo" src="logo_black.png" width="250">
+    </picture>
+</div>
+
+<h1>🛠️ ProStep DevOps & Monitoring Solutions</h1>
+<p>Инструменты для системного администрирования, мониторинга и автоматизации.</p>
+
+<h2>📁 Доступные инструменты</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Проект</th>
+            <th>Описание</th>
+            <th>Ссылка</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>tmux-ps</strong></td>
+            <td>Автосохранение и восстановление сессий tmux + SSH</td>
+            <td><a href="./tmux-ps/">Перейти ➡️</a></td>
+        </tr>
+        <tr>
+            <td><strong>SFTP Transfer Manager</strong></td>
+            <td>Автоматизация синхронизации данных через SFTP</td>
+            <td><span style="color: #8b949e;">В разработке ⏳</span></td>
+        </tr>
+    </tbody>
+</table>
+
+<hr>
+<h3>👨‍💻 Автор: Maxim Stepanuk</h3>
+<p>
+    <strong>Email:</strong> <a href="mailto:support@prostep.com.ua">support@prostep.com.ua</a><br>
+    <strong>Site:</strong> <a href="https://www.prostep.com.ua" target="_blank">prostep.com.ua</a>
+</p>
+
+</body>
+</html>

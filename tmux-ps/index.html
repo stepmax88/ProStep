@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tmux-ps (ProStep Session Manager)</title>
+    <style>
+        :root { --bg: #ffffff; --text: #24292f; --border: #d0d7de; --code-bg: #f6f8fa; --link: #0969da; }
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #0d1117; --text: #c9d1d9; --border: #30363d; --code-bg: #161b22; --link: #58a6ff; }
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 40px 20px; background: var(--bg); color: var(--text); }
+        h1, h2, h3 { border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-top: 24px; }
+        a { color: var(--link); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 14px; }
+        th, td { border: 1px solid var(--border); padding: 10px; text-align: left; }
+        th { background: var(--code-bg); }
+        pre { background: var(--code-bg); padding: 16px; border-radius: 6px; overflow: auto; border: 1px solid var(--border); }
+        code { font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; font-size: 85%; }
+        .back-link { margin-bottom: 20px; display: block; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<a href="../" class="back-link">⬅️ Назад к списку инструментов</a>
+
+<h1>🛠️ tmux-ps (ProStep Session Manager)</h1>
+<p><strong>Professional tool for automatic saving and restoring tmux sessions with SSH support.</strong></p>
+<p>Автор: Maxim Stepanuk | Компания: <a href="https://www.prostep.com.ua">ProStep Development</a></p>
+
+<h2>📝 Описание</h2>
+<p><strong>tmux-ps</strong> — это системная утилита для обеспечения непрерывности работы. Она автоматически сохраняет окна, панели и SSH-соединения, позволяя восстановить окружение после перезагрузки или разрыва связи.</p>
+
+<h2>🚀 Особенности</h2>
+<ul>
+    <li>⏰ <strong>Auto-save:</strong> Каждые 15 минут через crontab.</li>
+    <li>🔄 <strong>Auto-restore:</strong> При старте системы через systemd.</li>
+    <li>🛡️ <strong>SSH-Persistence:</strong> Восстановление активных SSH-клиентов.</li>
+</ul>
+
+<h2>🔧 Команды</h2>
+<table>
+    <thead><tr><th>Команда</th><th>Описание</th></tr></thead>
+    <tbody>
+        <tr><td><code>tmux-ps save</code></td><td>Сохранить текущее состояние сессий</td></tr>
+        <tr><td><code>tmux-ps restore</code></td><td>Восстановить из последнего дампа</td></tr>
+        <tr><td><code>tmux-ps ls</code></td><td>Список сессий с деталями</td></tr>
+        <tr><td><code>tmux-ps hwid</code></td><td>ID оборудования для лицензии</td></tr>
+    </tbody>
+</table>
+
+<h2>📦 Установка (YUM/DNF)</h2>
+<pre><code>sudo tee /etc/yum.repos.d/prostep.repo &lt;&lt;EOF
+[prostep]
+name=ProStep Repository
+baseurl=https://repo.prostep.com.ua/tmux-ps/repo/
+enabled=1
+gpgcheck=1
+gpgkey=https://repo.prostep.com.ua/tmux-ps/repo/RPM-GPG-KEY-ProStep
+EOF
+
+sudo dnf install tmux-ps -y</code></pre>
+
+<hr>
+<p>📩 <strong>Поддержка:</strong> <a href="mailto:support@prostep.com.ua">support@prostep.com.ua</a></p>
+
+</body>
+</html>
