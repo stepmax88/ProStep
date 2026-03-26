@@ -56,7 +56,7 @@ sudo dnf install https://repo.prostep.com.ua/repo/packages/tmux-ps-1.0.1-1.el8.x
 <summary><b>Способ 1: Автоматический скрипт (Быстро)</b></summary>
 
 
-Скопируйте код: 
+*   Скопируйте код: 
 
 
 ```bash
