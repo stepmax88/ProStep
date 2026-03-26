@@ -44,7 +44,7 @@
 Для установки последней версии **tmux-ps** выполните команду (требуются права root):
 
 ```bash
-sudo yum install https://github.com/stepmax88/ProStep/raw/refs/heads/main/tmux-ps/tmux-ps-1.0.1-1.el8.x86_64.rpm -y
+sudo dnf install https://repo.prostep.com.ua/tmux-ps/repo/tmux-ps-1.0.1-1.el8.x86_64.rpm -y
 ```
 
 ## 📦 Установка (Рекомендуемый способ)
