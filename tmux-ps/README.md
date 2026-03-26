@@ -62,12 +62,12 @@ curl -sSL https://repo.prostep.com.ua | sudo bash
 </details>
 
 
-<details>
+<details markdown="1">
 <summary><b>Способ 2: Через dnf config-manager</b></summary>
 
-<pre><code>
+```bash
 sudo dnf config-manager --add-repo https://repo.prostep.com.ua/repo/prostep.repo
-</code></pre>
+```
 
 </details>
 
