@@ -53,10 +53,10 @@
 
 ## Быстрая установка (RPM)
 
-Прямая установка **tmux-ps** (v1.2.1) - выполните команду (требуются права root):
+Прямая установка **tmux-ps** (v1.2.2) - выполните команду (требуются права root):
 
 ```bash
-sudo dnf install https://repo.prostep.com.ua/repo/packages/tmux-ps-1.2.1-1.el8.x86_64.rpm -y
+sudo dnf install https://repo.prostep.com.ua/repo/packages/tmux-ps-1.2.2-1.el8.x86_64.rpm -y
 ```
 
 ## Установка репозитория (Рекомендуется)
