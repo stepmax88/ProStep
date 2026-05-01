@@ -53,10 +53,10 @@
 
 ## Быстрая установка (RPM)
 
-Прямая установка **tmux-ps** (v1.2.2) - выполните команду (требуются права root):
+Прямая установка **tmux-ps** (v1.2.3) - выполните команду (требуются права root):
 
 ```bash
-sudo dnf install https://repo.prostep.com.ua/repo/packages/tmux-ps-1.2.2-1.el8.x86_64.rpm -y
+sudo dnf install https://repo.prostep.com.ua/repo/packages/tmux-ps-1.2.3-1.el8.x86_64.rpm -y
 ```
 
 ## Установка репозитория (Рекомендуется)
@@ -65,16 +65,7 @@ sudo dnf install https://repo.prostep.com.ua/repo/packages/tmux-ps-1.2.2-1.el8.x
 
 
 <details markdown="1">
-<summary><b>Способ 1: Автоматический скрипт</b></summary>
-
-```bash
-curl -sSL https://repo.prostep.com.ua | sudo bash
-```
-
-</details>
-
-<details markdown="1">
-<summary><b>Способ 2: Через dnf config-manager</b></summary>
+<summary><b>Способ 1: Через dnf config-manager</b></summary>
 
 ```bash
 sudo dnf config-manager --add-repo https://repo.prostep.com.ua/repo/prostep.repo
@@ -84,7 +75,7 @@ sudo dnf config-manager --add-repo https://repo.prostep.com.ua/repo/prostep.repo
 
 
 <details markdown="1">
-<summary><b>Способ 3: Ручная вставка (Copy-Paste)</b></summary>
+<summary><b>Способ 2: Ручная вставка (Copy-Paste)</b></summary>
 
 ```bash
 sudo tee /etc/yum.repos.d/prostep.repo <<EOF
@@ -102,7 +93,7 @@ EOF
 
 
 <details markdown="1">
-<summary><b>Способ 4: Установка через RPM-пакет (Pro)</b></summary>
+<summary><b>Способ 3: Установка через RPM-пакет (Pro)</b></summary>
 
 ```bash
 sudo dnf install https://repo.prostep.com.ua/repo/packages/prostep-release-1.0-1.noarch.rpm -y

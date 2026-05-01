@@ -5,3 +5,4 @@ DEV/
 *.dist/
 *.onefile-build/
 *.sh
+/portnock-ps/
